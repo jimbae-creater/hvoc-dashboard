@@ -4,107 +4,298 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <!-- <link rel="stylesheet" href="css/bootstrap-grid.css"> -->
     <link rel="stylesheet" href="css/dashboard.css">
     <title>Document</title>
 
 </head>
 <body class="body">
-    <form class="form-area" style="height: 100vh;" >
-    
-        <div class="m-0 d-flex" style="height: 50%;">
-            <div class="infobox m-0 bg-white p-3 m-2 " style="height: 100%;">
-                <div class="mb-2">
-                    <h3 class="grey700">VOC 발생 현황</h3>
+    <form class="form-area" >
+        <div class="row-container">
+            <div class="container">
+                <div class="container-header grey700">
+                    <h3 class="h3">VOC 발생 현황</h3>
                 </div>
-                <div class="d-flex align-center" style="height: 100%;">
-                    <div style="width: 100%;" class="pe-3">
+                <div class="content">
+                    <div class="content-left">
                         <div class="graph">
 
                         </div>
                     </div>
-                    <div class="">
-                        <div class="ratio-box my-2">
-                            <div class="d-flex align-center mx-2 mt-2">
-                                <div class="color-ball graph-orange"></div>
-                                <h4 class="grey900">판매</h4>
+                    <div>
+                        <!-- 비율컴포넌트(ratiobox) 시작 -->
+                        <div class="ratiobox">
+                            <div class="ratiobox-header-type1">
+                                <div class="colorpointer graph-orange"></div>
+                                <h4 class="grey900 h4">판매</h4>
                             </div>
                             <div class="d-flex">
-                                <div class="m-2">
-                                    <h5 class="grey600">처리율 (처리/접수)</h5>
-                                    <div class="d-flex align-items-baseline">
-                                        <p class="figure-display me-1 grey900">999%</p>
+                                <div class="m-8">
+                                    <h5 class="grey600 h5">처리율 (처리/접수)</h5>
+                                    <div class=" d-flex align-items-baseline">
+                                        <p class="figure-display grey900">999%</p>
                                         <p class="figure-display-sub grey600">9999/9999건</p>
                                     </div>
                                 </div>
-                                <div class="m-2">
-                                    <h5 class="grey600">전일대비</h5>
-                                    <div class="align-center">
-                                        <div class="ratio-chip minus">-999.9%</div>
-                                    </div>
+                                <div class="m-8">
+                                    <h5 class="grey600 h5">전일대비</h5>
+                                    <div class="ratio-chip minus">-999.9%</div>
                                 </div>
                             </div>
                         </div>
-                        <div class="ratio-box my-2">
-                            <div class="d-flex align-center mx-2 mt-2">
-                                <div class="color-ball graph-orange"></div>
-                                <h4 class="grey900">서비스</h4>
+                        <!-- 비율컴포넌트(ratiobox) 끝 -->
+
+                        <div class="ratiobox">
+                            <div class="ratiobox-header-type1">
+                                <div class="colorpointer graph-orange"></div>
+                                <h4 class="grey900 h4">판매</h4>
                             </div>
                             <div class="d-flex">
-                                <div class="m-2">
-                                    <h5 class="grey600">처리율 (처리/접수)</h5>
-                                    <div class="d-flex align-items-baseline">
-                                        <p class="figure-display me-1 grey900">999%</p>
+                                <div class="m-8">
+                                    <h5 class="grey600 h5">처리율 (처리/접수)</h5>
+                                    <div class=" d-flex align-items-baseline">
+                                        <p class="figure-display grey900">999%</p>
                                         <p class="figure-display-sub grey600">9999/9999건</p>
                                     </div>
                                 </div>
-                                <div class="m-2">
-                                    <h5 class="grey600">전일대비</h5>
-                                    <div class="align-center">
-                                        <div class="ratio-chip minus">-999.9%</div>
-                                    </div>
+                                <div class="m-8">
+                                    <h5 class="grey600 h5">전일대비</h5>
+                                    <div class="ratio-chip minus">-999.9%</div>
                                 </div>
                             </div>
                         </div>
-                        <div class="ratio-box my-2">
-                            <div class="d-flex align-center mx-2 mt-2">
-                                <div class="color-ball graph-orange"></div>
-                                <h4 class="grey900">본사</h4>
+                        <div class="ratiobox">
+                            <div class="ratiobox-header-type1">
+                                <div class="colorpointer graph-orange"></div>
+                                <h4 class="grey900 h4">판매</h4>
                             </div>
                             <div class="d-flex">
-                                <div class="m-2">
-                                    <h5 class="grey600">처리율 (처리/접수)</h5>
-                                    <div class="d-flex align-items-baseline">
-                                        <p class="figure-display me-1 grey900">999%</p>
+                                <div class="m-8">
+                                    <h5 class="grey600 h5">처리율 (처리/접수)</h5>
+                                    <div class=" d-flex align-items-baseline">
+                                        <p class="figure-display grey900">999%</p>
                                         <p class="figure-display-sub grey600">9999/9999건</p>
                                     </div>
                                 </div>
-                                <div class="m-2">
-                                    <h5 class="grey600">전일대비</h5>
-                                    <div class="align-center">
-                                        <div class="ratio-chip plus">+999.9%</div>
-                                    </div>
+                                <div class="m-8">
+                                    <h5 class="grey600 h5">전일대비</h5>
+                                    <div class="ratio-chip minus">-999.9%</div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!--  -->
-            <div class="infobox m-0 bg-white p-3 m-2">
-                <h3>sadsa</h3>
+            <div class="container">
+                <div class="container-header grey700">
+                    <h3 class="h3">Lead Time</h3>
+                </div>
+                <div class="content">
+                    <div class="content-left">
+                        <div class="graph">
+
+                        </div>
+                    </div>
+                    <div>
+                        <div class="ratiobox">
+                            <div class="ratiobox-header-type1">
+                                <div class="colorpointer graph-orange"></div>
+                                <h4 class="grey900 h4">판매</h4>
+                            </div>
+                            <div class="d-flex">
+                                <div class="m-8">
+                                    <h5 class="grey600 h5">오늘/어제</h5>
+                                    <div class=" d-flex align-items-baseline">
+                                        <p class="figure-display grey900">999분</p>
+                                        <p class="figure-display-sub grey600">/999분</p>
+                                    </div>
+                                </div>
+                                <div class="m-8">
+                                    <h5 class="grey600 h5">전일대비</h5>
+                                    <div class="ratio-chip minus">-999.9%</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ratiobox">
+                            <div class="ratiobox-header-type1">
+                                <div class="colorpointer graph-orange"></div>
+                                <h4 class="grey900 h4">판매</h4>
+                            </div>
+                            <div class="d-flex">
+                                <div class="m-8">
+                                    <h5 class="grey600 h5">오늘/어제</h5>
+                                    <div class=" d-flex align-items-baseline">
+                                        <p class="figure-display grey900">999분</p>
+                                        <p class="figure-display-sub grey600">/999분</p>
+                                    </div>
+                                </div>
+                                <div class="m-8">
+                                    <h5 class="grey600 h5">전일대비</h5>
+                                    <div class="ratio-chip minus">-999.9%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ratiobox">
+                            <div class="ratiobox-header-type1">
+                                <div class="colorpointer graph-orange"></div>
+                                <h4 class="grey900 h4">판매</h4>
+                            </div>
+                            <div class="d-flex">
+                                <div class="m-8">
+                                    <h5 class="grey600 h5">오늘/어제</h5>
+                                    <div class=" d-flex align-items-baseline">
+                                        <p class="figure-display grey900">999분</p>
+                                        <p class="figure-display-sub grey600">/999분</p>
+                                    </div>
+                                </div>
+                                <div class="m-8">
+                                    <h5 class="grey600 h5">전일대비</h5>
+                                    <div class="ratio-chip minus">-999.9%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <!-- <div class="container-box">
-            <div class="container">
-                <h3>asdasd</h3>
-            </div>
-            <div class="container">
-                <h3>sadsa</h3>
-                
-            </div>
-        </div> -->
 
+        <div class="row-container">
+            <div class="container">
+                <div class="container-header grey700">
+                    <h3 class="h3">불만률 추이</h3>
+                </div>
+                <div class="content">
+                    <div class="content-left">
+                        <div class="graph">
+
+                        </div>
+                    </div>
+                    <div>
+                        <div class="ratiobox d-flex">
+                            <div class="ratiobox-header-type2">
+                                <div class="colorpointer graph-orange"></div>
+                                <h4 class="grey900 h4">판매</h4>
+                            </div>
+                            <div class="d-flex">
+                                <div class="m-8">
+                                    <h5 class="grey600 h5">처리율 (처리/접수)</h5>
+                                    <div class=" d-flex align-items-baseline">
+                                        <p class="figure-display grey900">999%</p>
+                                        <p class="figure-display-sub grey600">9999/9999건</p>
+                                    </div>
+                                </div>
+                                <div class="m-8">
+                                    <h5 class="grey600 h5">전일대비</h5>
+                                    <div class="ratio-chip minus">-999.9%</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ratiobox d-flex">
+                            <div class="ratiobox-header-type2">
+                                <div class="colorpointer graph-orange"></div>
+                                <h4 class="grey900 h4">판매</h4>
+                            </div>
+                            <div class="d-flex">
+                                <div class="m-8">
+                                    <h5 class="grey600 h5">처리율 (처리/접수)</h5>
+                                    <div class=" d-flex align-items-baseline">
+                                        <p class="figure-display grey900">999%</p>
+                                        <p class="figure-display-sub grey600">9999/9999건</p>
+                                    </div>
+                                </div>
+                                <div class="m-8">
+                                    <h5 class="grey600 h5">전일대비</h5>
+                                    <div class="ratio-chip minus">-999.9%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ratiobox d-flex">
+                            <div class="ratiobox-header-type2">
+                                <div class="colorpointer graph-orange"></div>
+                                <h4 class="grey900 h4">스타리아 판매</h4>
+                            </div>
+                            <div class="d-flex">
+                                <div class="m-8">
+                                    <h5 class="grey600 h5">처리율 (처리/접수)</h5>
+                                    <div class=" d-flex align-items-baseline">
+                                        <p class="figure-display grey900">999%</p>
+                                        <p class="figure-display-sub grey600">9999/9999건</p>
+                                    </div>
+                                </div>
+                                <div class="m-8">
+                                    <h5 class="grey600 h5">전일대비</h5>
+                                    <div class="ratio-chip minus">-999.9%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ratiobox d-flex">
+                            <div class="ratiobox-header-type2">
+                                <div class="colorpointer graph-orange"></div>
+                                <h4 class="grey900 h4">판매</h4>
+                            </div>
+                            <div class="d-flex">
+                                <div class="m-8">
+                                    <h5 class="grey600 h5">처리율 (처리/접수)</h5>
+                                    <div class=" d-flex align-items-baseline">
+                                        <p class="figure-display grey900">999%</p>
+                                        <p class="figure-display-sub grey600">9999/9999건</p>
+                                    </div>
+                                </div>
+                                <div class="m-8">
+                                    <h5 class="grey600 h5">전일대비</h5>
+                                    <div class="ratio-chip plus">+999.9%</div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="container-header grey700">
+                    <h3 class="h3">주요 상담 유형</h3>
+                </div>
+                <div class="content">
+                    <div class="content-left">
+                        <div class="graph"></div>
+                    </div>
+                    <div>
+                        <table class="tb">
+                            <colgroup>
+                                <col>
+                                <col>
+                                <col class="h3">
+                                <col>
+                            </colgroup>
+                            <thead class="bg-grey200 h5 grey700"> 
+                                <th style="width: 196px; height:28px">
+                                    <span class="">유형</span>
+                                </th>
+                                <th style="width: 80px;">
+                                    <span class="">금일유입건</span>
+                                </th>
+                                <th style="width: 80px;">
+                                    <span class="">전일대비</span>
+                                </th>
+                                <th style="width: 140px;">
+                                    <span class="">최다발생차종</span>
+                                </th>
+                            </thead>
+                            <tbody>
+                              <tr style="height:42px">
+                                <td>내용</td>
+                                <td>내용</td>
+                                <td>내용</td>
+                                <td>내용</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                    </div>
+                </div>
+            </div>
+        </div>
     </form>
 
     <script src="css/bootstrap.bundle.js"></script>
