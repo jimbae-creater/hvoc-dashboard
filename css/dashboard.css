@@ -133,7 +133,6 @@
 
 .tablerow tr{
     height: 42px;
-    
 }
 
 .tablerow tr:nth-child(even){
@@ -147,15 +146,15 @@
 .tablerow td{
     padding: 0px 8px;
     text-align: center;
-    height: 100%;
+    vertical-align: middle;
 }
 
-.tablerow td:nth-child(1) {
+/* .tablerow td:nth-child(1) {
     font-weight: 900;
     text-align: left;
     display: flex;
     align-items: center;
-}
+} */
    
 .tablerow td:nth-child(3) {
     display: flex;
