@@ -118,11 +118,49 @@
     .minus{background: #2196F3;}
     .plus{background: #F44336;}
 
+.content-table{
+    padding: 1px;
+}
+
 .tb{
-    width: 496px;
+    width: 490px;
     border-collapse: collapse;
 }
 
+.tablerow{ width: auto;
+/* 하위요소 꼬집어 잡으려고 만든 허수 클래스 */
+}
+
+.tablerow tr{
+    height: 42px;
+    
+}
+
+.tablerow tr:nth-child(even){
+    background-color: #f5f5f5;
+}
+      
+.tablerow tr:nth-child(odd){
+    background-color: #fff;
+}
+
+.tablerow td{
+    padding: 0px 8px;
+    text-align: center;
+    height: 100%;
+}
+
+.tablerow td:nth-child(1) {
+    font-weight: 900;
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+   
+.tablerow td:nth-child(3) {
+    display: flex;
+    align-items: center;
+}
 
 /* 인스턴트 값 */
 .d-flex {display: flex;}
@@ -154,6 +192,15 @@
     letter-spacing: -0.03em;
 }
 
+.p2 {
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0px;
+    line-height: 20px;
+    letter-spacing: -0.03em;
+
+}
+
 /* 컬러 */
 .grey50 {color: #FAFAFA;}
 
@@ -176,10 +223,41 @@
 .grey900 {color: #212121;}
 
 
-/* 그래프 컬러 */
-.graph-orange{background-color: #FF9800; color: #FF9800; }
+/* 데이터 컬러(그래프, 표에 활용) */
+    /* 세트1 */
+    .datacolor1-yellow{background-color: #ECD078; color: #ECD078; }
 
+    .datacolor1-orange{background-color: #D95B43; color: #D95B43; }
 
+    .datacolor1-red{background-color: #C02942; color: #C02942; }
+
+    .datacolor1-brown{background-color: #542437; color: #542437; }
+
+    .datacolor1-teal{background-color: #53777A; color: #53777A; }
+
+    /* 세트2 */
+    .datacolor2-grey{background-color: #556270; color: #556270; }
+
+    .datacolor2-teal{background-color: #4ECDC4; color: #4ECDC4; }
+    
+    .datacolor2-lime{background-color: #C7F464; color: #C7F464; }
+    
+    .datacolor2-pink{background-color: #FF6B6B; color: #FF6B6B; }
+    
+    .datacolor2-red{background-color: #C44D58; color: #C44D58; }
+
+    /* 세트3 */
+    .datacolor3-brown {background-color: #5E412F; color: #5E412F; }
+
+    .datacolor3-yogurt {background-color: #FCEBB6; color: #FCEBB6; }
+
+    .datacolor3-teal {background-color: #78C0A8; color: #78C0A8; }
+
+    .datacolor3-orange {background-color: #F07818; color: #F07818; }
+
+    .datacolor3-yellow {background-color: #F0A830; color: #F0A830; }
+
+    
 /* 백그라운드 컬러 */
 .bg-white {background-color: #FFF;}
 
