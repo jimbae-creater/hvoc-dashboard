@@ -8,7 +8,7 @@
     font-family: 'Malgun Gothic', sans-serif;
 }
 
-/*  */
+/* 개별 클래스 */
 .form-area{
     background-color: #F7F8FB;
     padding: 8px;
@@ -63,8 +63,8 @@
     margin: 12px 0px;
 }
 
-    /* voc현황과 리드타임이 사용되는 타입1과 불만률 추이에 사용되는 타입2 각각 약간 다른 모양을 가지고 있습니다.
-    타입2는 헤딩 영역의 변칙을 고려하여 절대값 너비120픽셀이 적용된게 가장 큰 특징입니다.*/
+/* voc현황과 리드타임이 사용되는 타입1과 불만률 추이에 사용되는 타입2 각각 약간 다른 모양을 가지고 있습니다.
+타입2는 헤딩 영역의 변칙을 고려하여 절대값 너비120픽셀이 적용된게 가장 큰 특징입니다.*/
 .ratiobox-header-type1{
     display: flex;
     align-items: center;
@@ -103,7 +103,7 @@
 }
 
 /* 비율-칩 컴포넌트 */
-.ratio-chip{
+.ratio-chip {
     display: flex;
     padding: 2px 8px;
     justify-content: center;
@@ -115,8 +115,10 @@
     color: white;
 }
     /* 표시되는 수치가 플러스인지 마이너스인지에 따라 칩의 컬러가 바뀝니다.이름대로 바뀝니다. */
-    .minus{background: #2196F3;}
-    .plus{background: #F44336;}
+    .minus-bg {background-color: #2196F3;}
+    .minus {color: #2196F3;}
+    .plus-bg {background-color: #F44336;}
+    .plus {color: #F44336;}
 
 .content-table{
     padding: 1px;
@@ -127,8 +129,9 @@
     border-collapse: collapse;
 }
 
-.tablerow{ width: auto;
-/* 하위요소 꼬집어 잡으려고 만든 허수 클래스 */
+.tablerow{ 
+    width: auto;
+    /* 하위요소 tr 꼬집어 잡으려고 만든 허수 클래스 */
 }
 
 .tablerow tr{
@@ -149,22 +152,22 @@
     vertical-align: middle;
 }
 
-/* .tablerow td:nth-child(1) {
+.tablecol-type {
     font-weight: 900;
     text-align: left;
+}
+   
+/* .tablerow td:nth-child(3) {
     display: flex;
     align-items: center;
 } */
-   
-.tablerow td:nth-child(3) {
-    display: flex;
-    align-items: center;
-}
 
 /* 인스턴트 값 */
 .d-flex {display: flex;}
 
 .m-8 {margin: 8px;}
+
+.mr-4{margin-right: 4px;}
 
 .align-items-baseline {align-items:baseline}
 
@@ -224,37 +227,37 @@
 
 /* 데이터 컬러(그래프, 표에 활용) */
     /* 세트1 */
-    .datacolor1-yellow{background-color: #ECD078; color: #ECD078; }
+    .datacolor1-yellow{color: #ECD078; }
 
-    .datacolor1-orange{background-color: #D95B43; color: #D95B43; }
+    .datacolor1-orange{color: #D95B43; }
 
-    .datacolor1-red{background-color: #C02942; color: #C02942; }
+    .datacolor1-red{color: #C02942; }
 
-    .datacolor1-brown{background-color: #542437; color: #542437; }
+    .datacolor1-brown{color: #542437; }
 
-    .datacolor1-teal{background-color: #53777A; color: #53777A; }
+    .datacolor1-teal{color: #53777A; }
 
     /* 세트2 */
-    .datacolor2-grey{background-color: #556270; color: #556270; }
+    .datacolor2-grey{color: #556270; }
 
-    .datacolor2-teal{background-color: #4ECDC4; color: #4ECDC4; }
+    .datacolor2-teal{color: #4ECDC4; }
     
-    .datacolor2-lime{background-color: #C7F464; color: #C7F464; }
+    .datacolor2-lime{color: #C7F464; }
     
-    .datacolor2-pink{background-color: #FF6B6B; color: #FF6B6B; }
+    .datacolor2-pink{color: #FF6B6B; }
     
-    .datacolor2-red{background-color: #C44D58; color: #C44D58; }
+    .datacolor2-red{color: #C44D58; }
 
     /* 세트3 */
-    .datacolor3-brown {background-color: #5E412F; color: #5E412F; }
+    .datacolor3-brown {color: #5E412F; }
 
-    .datacolor3-yogurt {background-color: #FCEBB6; color: #FCEBB6; }
+    .datacolor3-yogurt {color: #FCEBB6; }
 
-    .datacolor3-teal {background-color: #78C0A8; color: #78C0A8; }
+    .datacolor3-teal {color: #78C0A8; }
 
-    .datacolor3-orange {background-color: #F07818; color: #F07818; }
+    .datacolor3-orange {color: #F07818; }
 
-    .datacolor3-yellow {background-color: #F0A830; color: #F0A830; }
+    .datacolor3-yellow {color: #F0A830; }
 
     
 /* 백그라운드 컬러 */
