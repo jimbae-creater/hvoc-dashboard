@@ -26,7 +26,7 @@
     height: clac(100% - 16px);
     background-color: white;
     padding: 16px;
-    border: solid 2px #E0E0E0 ;
+    border: solid 1px #E0E0E0 ;
     border-radius: 8px;
     margin: 8px;
 }
@@ -55,13 +55,18 @@
 
 /* 비율 컴포넌트 */
 .ratiobox{
-    width: max-content;
     background-color: white;
     border: solid 1px #E0E0E0;
     border-radius: 4px;
     padding: 6px;
     margin: 12px 0px;
 }
+
+.ratiobox-width1{width: 232px;}
+
+.ratiobox-width2{width: 200px;}
+
+.ratiobox-width3{width: 360px;}
 
 /* voc현황과 리드타임이 사용되는 타입1과 불만률 추이에 사용되는 타입2 각각 약간 다른 모양을 가지고 있습니다.
 타입2는 헤딩 영역의 변칙을 고려하여 절대값 너비120픽셀이 적용된게 가장 큰 특징입니다.*/
@@ -114,11 +119,6 @@
     margin-top: 3px;
     color: white;
 }
-    /* 표시되는 수치가 플러스인지 마이너스인지에 따라 칩의 컬러가 바뀝니다.이름대로 바뀝니다. */
-    .minus-bg {background-color: #2196F3;}
-    .minus {color: #2196F3;}
-    .plus-bg {background-color: #F44336;}
-    .plus {color: #F44336;}
 
 .content-table{
     padding: 1px;
@@ -203,7 +203,7 @@
 
 }
 
-/* 컬러 */
+/* 회색 */
 .grey50 {color: #FAFAFA;}
 
 .grey100 {color: #F5F5F5;}
@@ -223,7 +223,29 @@
 .grey800 {color: #424242;}
 
 .grey900 {color: #212121;}
+    
+/* 백그라운드 회색 */
+.bg-white {background-color: #FFF;}
 
+.bg-grey50 {background-color: #FAFAFA;}
+
+.bg-grey100 {background-color: #F5F5F5;}
+
+.bg-grey200 {background-color: #EEEEEE;}
+
+.bg-grey300 {background-color: #E0E0E0;}
+
+.bg-grey400 {background-color: #BDBDBD;}
+
+.bg-grey500 {background-color: #9E9E9E;}
+
+.bg-grey600 {background-color: #757575;}
+
+.bg-grey700 {background-color: #616161;}
+
+.bg-grey800 {background-color: #424242;}
+
+.bg-grey900 {background-color: #212121;}
 
 /* 데이터 컬러(그래프, 표에 활용) */
     /* 세트1 */
@@ -259,26 +281,12 @@
 
     .datacolor3-yellow {color: #F0A830; }
 
-    
-/* 백그라운드 컬러 */
-.bg-white {background-color: #FFF;}
+/* 하락 상승 표기 컬러: 하락엔 파란색, 상승엔 빨간색 사용. */
+.minus-bg {background-color: #2196F3;}
 
-.bg-grey50 {background-color: #FAFAFA;}
+.minus {color: #2196F3;}
 
-.bg-grey100 {background-color: #F5F5F5;}
+.plus-bg {background-color: #F44336;}
 
-.bg-grey200 {background-color: #EEEEEE;}
+.plus {color: #F44336;}
 
-.bg-grey300 {background-color: #E0E0E0;}
-
-.bg-grey400 {background-color: #BDBDBD;}
-
-.bg-grey500 {background-color: #9E9E9E;}
-
-.bg-grey600 {background-color: #757575;}
-
-.bg-grey700 {background-color: #616161;}
-
-.bg-grey800 {background-color: #424242;}
-
-.bg-grey900 {background-color: #212121;}
