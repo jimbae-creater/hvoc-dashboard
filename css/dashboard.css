@@ -35,7 +35,6 @@
 
 .content{
     height: calc(100% - 36px);
-    display: flex;
     align-items: center;
 }
 
@@ -43,6 +42,17 @@
     padding-right: 16px;
     width: 100%;
     height: 100%;
+}
+
+.content-circle{
+    padding-right: 16px;
+    min-width: 320px;
+    height: 100%;
+}
+
+.content-top{
+    width: 100%;
+    height: calc(100% - 136px);
 }
 
 .graph{
@@ -54,6 +64,13 @@
 }
 
 /* 비율 컴포넌트 */
+.ratiobox-container{
+    width: calc(100% + 8px);
+    position: relative;
+    left: -4px;
+    bottom: -4px;
+}
+
 .ratiobox{
     background-color: white;
     border: solid 1px #E0E0E0;
@@ -62,11 +79,19 @@
     margin: 12px 0px;
 }
 
-.ratiobox-width1{width: 232px;}
+.ratiobox-wide{
+    background-color: white;
+    border: solid 1px #E0E0E0;
+    border-radius: 4px;
+    padding: 2px 6px;
+    margin: 4px 4px;
+    width: 50%;
+    justify-content: space-between;
+}
+
+.ratiobox-width1{width: 238px;}
 
 .ratiobox-width2{width: 200px;}
-
-.ratiobox-width3{width: 360px;}
 
 /* voc현황과 리드타임이 사용되는 타입1과 불만률 추이에 사용되는 타입2 각각 약간 다른 모양을 가지고 있습니다.
 타입2는 헤딩 영역의 변칙을 고려하여 절대값 너비120픽셀이 적용된게 가장 큰 특징입니다.*/
@@ -79,16 +104,14 @@
 .ratiobox-header-type2{
     display: flex;
     align-items: center;
-    width: 120px;
     margin-left: 8px;
 }
 
-.colorpointer{
-    width: 12px;
-    height: 12px;
-    margin-right: 6px;
-    border-radius: 999px;
-}
+.ratiobox-content-left1{width: 124px;}
+
+.ratiobox-content-left2{width: 94px;}
+
+.ratiobox-content-right{width: 61px;}
 
 .figure-display{
     font-size: 18px;
@@ -96,7 +119,6 @@
     line-height: 22px;
     letter-spacing: -0.01em;
     margin: 0px;
-    margin-right: 4px;
 }
 
 .figure-display-sub{
@@ -109,28 +131,28 @@
 
 /* 비율-칩 컴포넌트 */
 .ratio-chip {
-    display: flex;
     padding: 2px 8px;
-    justify-content: center;
-    align-items: center;
     border-radius: 999px;
     font-size: 12px;
     line-height: 16px;
-    margin-top: 3px;
+    position: relative;
+    top: 2px;
     color: white;
+    display: inline;
 }
+
+/* 테이블 영역 */
 
 .content-table{
     padding: 1px;
 }
 
 .tb{
-    width: 490px;
+    width: auto;
     border-collapse: collapse;
 }
 
 .tablerow{ 
-    width: auto;
     /* 하위요소 tr 꼬집어 잡으려고 만든 허수 클래스 */
 }
 
@@ -155,15 +177,14 @@
 .tablecol-type {
     font-weight: 900;
     text-align: left;
-}
-   
-/* .tablerow td:nth-child(3) {
     display: flex;
     align-items: center;
-} */
+}
 
 /* 인스턴트 값 */
 .d-flex {display: flex;}
+
+.d-inline {display: inline;}
 
 .m-8 {margin: 8px;}
 
