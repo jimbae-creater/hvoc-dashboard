@@ -13,12 +13,6 @@
     background-color: #F7F8FB;
     padding: 8px;
     box-sizing: border-box;
-    height: 100vh;
-}
-
-.row-container{
-    height: 50%;
-    display: flex;
 }
 
 .container{
@@ -38,21 +32,27 @@
     align-items: center;
 }
 
-.content-left{
+.content-tpye-01{
     padding-right: 16px;
     width: 100%;
     height: 100%;
+}
+
+.content-tpye-02{
+    width: 100%;
+    height: 100%;
+}
+
+.content-tpye-03{
+    width: 100%;
+    height: 100%;
+    padding-left: 16px;
 }
 
 .content-circle{
     padding-right: 16px;
     min-width: 320px;
     height: 100%;
-}
-
-.content-top{
-    width: 100%;
-    height: calc(100% - 136px);
 }
 
 .graph{
@@ -75,23 +75,13 @@
     background-color: white;
     border: solid 1px #E0E0E0;
     border-radius: 4px;
-    padding: 6px;
+    padding: 8px;
     margin: 12px 0px;
 }
 
-.ratiobox-wide{
-    background-color: white;
-    border: solid 1px #E0E0E0;
-    border-radius: 4px;
-    padding: 2px 6px;
-    margin: 4px 4px;
-    width: 50%;
-    justify-content: space-between;
-}
+/* .ratiobox-width1{width: 238px;}
 
-.ratiobox-width1{width: 238px;}
-
-.ratiobox-width2{width: 200px;}
+.ratiobox-width2{width: 200px;} */
 
 /* voc현황과 리드타임이 사용되는 타입1과 불만률 추이에 사용되는 타입2 각각 약간 다른 모양을 가지고 있습니다.
 타입2는 헤딩 영역의 변칙을 고려하여 절대값 너비120픽셀이 적용된게 가장 큰 특징입니다.*/
@@ -107,39 +97,47 @@
     margin-left: 8px;
 }
 
-.ratiobox-content-left1{width: 124px;}
+.ratiobox-content-left1{width: 140px;}
 
-.ratiobox-content-left2{width: 94px;}
+.ratiobox-content-left2{width: 100px;}
 
-.ratiobox-content-right{width: 61px;}
+.ratiobox-content-right{width: 76px;}
 
 .figure-display{
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 500;
-    line-height: 22px;
+    line-height: 24px;
     letter-spacing: -0.01em;
     margin: 0px;
 }
 
 .figure-display-sub{
-    font-size: 13px;
+    font-size: 15px;
     font-weight: 500;
-    line-height: 14px;
+    line-height: 17px;
     letter-spacing: -0.01em;
     margin: 0px;
 }
 
 /* 비율-칩 컴포넌트 */
 .ratio-chip {
-    padding: 2px 8px;
+    padding: 4px 10px;
     border-radius: 999px;
-    font-size: 12px;
-    line-height: 16px;
+    font-size: 14px;
+    line-height: 18px;
     position: relative;
-    top: 2px;
+    top: 6px;
     color: white;
     display: inline;
 }
+
+.ratiobox-h6{
+    width: 208px;
+    text-align: right;
+    margin-top: 4px;
+    margin-bottom: 8px;
+}
+
 
 /* 테이블 영역 */
 
@@ -190,29 +188,69 @@
 
 .mr-4{margin-right: 4px;}
 
+.mt-8{margin-top: 8px;}
+
+.mb-8{margin-bottom: 8px;}
+
 .align-items-baseline {align-items:baseline}
+
+.m-auto{margin: auto;}
+
+.perfect-centered{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.qwer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding-bottom: 16px;
+}
 
 
 /* 타이포그래피 (텍스트 기본 설정) */
+.h2 {
+    font-size: 40px;
+    margin: 0px;
+    line-height: 48px;
+    letter-spacing: -0.03em;
+    font-weight: 800;
+}
+
 .h3 {
     font-size: 20px;
     margin: 0px;
     line-height: 28px;
     letter-spacing: -0.03em;
+    font-weight: 800;
 }
 
 .h4 {
-    font-size: 14px;
+    font-size: 16px;
     margin: 0px;
-    line-height: 20px;
+    line-height: 22px;
     letter-spacing: -0.03em;
+    font-weight: 800;
 }
 
 .h5 {
+    font-size: 14px;
+    margin: 0px;
+    line-height: 18px;
+    letter-spacing: -0.03em;
+    font-weight: 800;
+}
+
+.h6 {
     font-size: 12px;
     margin: 0px;
-    line-height: 16px;
+    line-height: 14px;
     letter-spacing: -0.03em;
+    font-weight: 800;
 }
 
 .p2 {
@@ -221,7 +259,6 @@
     margin: 0px;
     line-height: 20px;
     letter-spacing: -0.03em;
-
 }
 
 /* 회색 */
