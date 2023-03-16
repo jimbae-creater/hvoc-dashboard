@@ -33,7 +33,7 @@
                                 </div>
                             </div>
                         </div>
-                    <div>
+                    <div class="ratiobox-container">
                         <!-- 비율컴포넌트(ratiobox) 시작 -->
                         <div class="ratiobox">
                             <div class="ratiobox-header-type1">
@@ -95,6 +95,7 @@
                 </div>
             </div>
             <div class="container">
+                <!-- 리드 타임 Lead Time -->
                 <div class="container-header grey700">
                     <h3 class="h3">Lead Time</h3>
                 </div>
@@ -104,10 +105,10 @@
 
                         </div>
                     </div>
-                    <div>
+                    <div class="ratiobox-container">
                         <div class="ratiobox">
                             <div class="ratiobox-header-type1">
-                                <span class="datacolor1-yellow mr-4">●  </span>
+                                <span class="datacolor1-1 mr-4">●  </span>
                                 <h4 class="grey900 h4">판매</h4>
                             </div>
                             <div class="d-flex">
@@ -127,7 +128,7 @@
 
                         <div class="ratiobox">
                             <div class="ratiobox-header-type1">
-                                <span class="datacolor1-red mr-4">●  </span>
+                                <span class="datacolor1-3 mr-4">●  </span>
                                 <h4 class="grey900 h4">서비스</h4>
                             </div>
                             <div class="d-flex">
@@ -146,7 +147,7 @@
                         </div>
                         <div class="ratiobox">
                             <div class="ratiobox-header-type1">
-                                <span class="datacolor1-teal mr-4">●  </span>
+                                <span class="datacolor1-5 mr-4">●  </span>
                                 <h4 class="grey900 h4">본사</h4>
                             </div>
                             <div class="d-flex">
@@ -169,12 +170,13 @@
         </div>
 
         <div class="d-flex">
+            <!-- 불만률 추이 -->
             <div class="container">
                 <div class="container-header grey700">
-                    <h3 class="h3">불만률 추이</h3>
+                    <h3 class="h3">불만율 추이</h3>
                 </div>
                 <div class="content d-flex">
-                    <div>
+                    <div class="ratiobox-container">
                         <div class="ratiobox">
                             <div class="ratiobox-header-type1">
                                 <h4 class="grey900 h4">연간 불만율</h4>
@@ -196,7 +198,7 @@
                             <div class="ratiobox-header-type1">
                                 <h4 class="grey900 h4">일간 불만율</h4>
                             </div>
-                            <div class="qwer">
+                            <div class="ratiobox-dailycoplain">
                                 <div class="graph mt-8 mb-8" style="width:200px ; height:100px;"></div>
                                 <h5 class="grey600 h5">불만율 (불만/전체)</h5>
                                 <div class=" d-flex align-items-baseline">
@@ -213,6 +215,7 @@
                     </div>
                 </div>
             </div>
+            <!-- 주요 상담 유형 -->
             <div class="container">
                 <div class="container-header grey700">
                     <h3 class="h3">주요 상담 유형</h3>
@@ -241,7 +244,7 @@
                               <tr class="p2 grey900">
                                 <td>
                                     <div class="tablecol-type">
-                                        <span class="datacolor3-yogurt mr-4">●  </span>
+                                        <span class="datacolor2-1 mr-4">●  </span>
                                         <span class="grey800">결제 관련 정보 확인/변경</span>
                                     </div>
                                 </td>
@@ -252,7 +255,7 @@
                               <tr class="tablerow p2 grey900">
                                 <td>
                                     <div class="tablecol-type">
-                                        <span class="datacolor3-brown mr-4">●  </span>
+                                        <span class="datacolor2-2 mr-4">●  </span>
                                         <span class="grey800">간편 결제_포인트</span>
                                     </div>
                                 <td>999</td>
@@ -262,7 +265,7 @@
                               <tr class="tablerow p2 grey900">
                                 <td>
                                     <div class="tablecol-type">
-                                        <span class="datacolor3-teal mr-4">●  </span>
+                                        <span class="datacolor2-3 mr-4">●  </span>
                                         <span class="grey800">서비스_통신사</span>
                                     </div>
                                 <td>9</td>
@@ -272,7 +275,7 @@
                               <tr class="tablerow p2 grey900">
                                 <td>
                                     <div class="tablecol-type">
-                                        <span class="datacolor3-orange mr-4">●  </span>
+                                        <span class="datacolor2-4 mr-4">●  </span>
                                         <span class="grey800">개인정보 변경</span>
                                     </div>
                                 <td>999</td>
@@ -282,7 +285,7 @@
                               <tr class="tablerow p2 grey900">
                                 <td>
                                     <div class="tablecol-type">
-                                        <span class="datacolor3-yellow mr-4">●  </span>
+                                        <span class="datacolor2-5 mr-4">●  </span>
                                         <span class="grey800">기타 앱 관련 문의</span>
                                     </div>
                                 <td>999</td>
@@ -296,8 +299,434 @@
                 </div>
             </div>
         </div>
-    </form>
 
-    <script src="css/bootstrap.bundle.js"></script>
+        <!-- 불만 건수 형황 -->
+        <div class="d-flex">
+            <div class="container">
+                <div class="container-header grey700">
+                    <h3 class="h3">불만 건수 현황</h3>
+                </div>
+                <div class="content d-flex">
+                    <div class="ratiobox-dailycoplain">
+                        <div class="graph mt-8 mb-8" style="width:200px ; height:100px;"></div>
+                            <div class="content-table bg-grey200 mt-8">
+                                <table class="tb">
+                            <thead class="bg-grey200 h6 grey700" style="height: 28px;"> 
+                                <th>
+                                    <span class="">하이테크센터</span>
+                                </th>
+                                <th >
+                                    <span class="">건수</span>
+                                </th>
+                                <th >
+                                    <span class="">증감(전일대비)</span>
+                                </th>
+                            </thead>
+                            <tbody class="tablerow">
+                              <tr class="p2 grey900">
+                                <td>
+                                    <div class="tablecol-type">
+                                        <span class="datacolor3-1 mr-4">●  </span>
+                                        <span class="grey800">수원 하이테크센터</span>
+                                    </div>
+                                </td>
+                                <td>999</td>
+                                <td><span class="minus">▼  </span>999건</td>
+                              </tr>
+                              <tr class="tablerow p2 grey900">
+                                <td>
+                                    <div class="tablecol-type">
+                                        <span class="datacolor3-2 mr-4">●  </span>
+                                        <span class="grey800">동부 하이테크센터</span>
+                                    </div>
+                                <td>999</td>
+                                <td><span class="minus">▼  </span>999건</td>
+                              </tr>
+                              <tr class="tablerow p2 grey900">
+                                <td>
+                                    <div class="tablecol-type">
+                                        <span class="datacolor3-3 mr-4">●  </span>
+                                        <span class="grey800">인천 하이테크센터</span>
+                                    </div>
+                                <td>9</td>
+                                <td><span class="plus">▲  </span>9건</td>
+                              </tr>
+                              <tr class="tablerow p2 grey900">
+                                <td>
+                                    <div class="tablecol-type">
+                                        <span class="datacolor3-4 mr-4">●  </span>
+                                        <span class="grey800">고양 하이테크센터</span>
+                                    </div>
+                                <td>999</td>
+                                <td><span class="plus">▲  </span>999건</td>
+                              </tr>
+                              <tr class="tablerow p2 grey900">
+                                <td>
+                                    <div class="tablecol-type">
+                                        <span class="datacolor3-5 mr-4">●  </span>
+                                        <span class="grey800">대전 하이테크센터</span>
+                                    </div>
+                                <td>999</td>
+                                <td><span class="plus">▲  </span>999건
+                                </td>
+                              </tr>
+                            </tbody>
+                                </table>
+                            </div>
+                    </div>
+                    
+                    <div class="ratiobox-dailycoplain">
+                        <div class="graph mt-8 mb-8" style="width:200px ; height:100px;"></div>
+                            <div class="content-table bg-grey200 mt-8">
+                                <table class="tb">
+                            <thead class="bg-grey200 h6 grey700" style="height: 28px;"> 
+                                <th>
+                                    <span class="">지역본부</span>
+                                </th>
+                                <th >
+                                    <span class="">건수</span>
+                                </th>
+                                <th >
+                                    <span class="">증감(전일대비)</span>
+                                </th>
+                            </thead>
+                            <tbody class="tablerow">
+                              <tr class="p2 grey900">
+                                <td>
+                                    <div class="tablecol-type">
+                                        <span class="datacolor4-1 mr-4">●  </span>
+                                        <span class="grey800">대구 경북</span>
+                                    </div>
+                                </td>
+                                <td>999</td>
+                                <td><span class="minus">▼  </span>999건</td>
+                              </tr>
+                              <tr class="tablerow p2 grey900">
+                                <td>
+                                    <div class="tablecol-type">
+                                        <span class="datacolor4-2 mr-4">●  </span>
+                                        <span class="grey800">남부</span>
+                                    </div>
+                                <td>999</td>
+                                <td><span class="minus">▼  </span>999건</td>
+                              </tr>
+                              <tr class="tablerow p2 grey900">
+                                <td>
+                                    <div class="tablecol-type">
+                                        <span class="datacolor4-3 mr-4">●  </span>
+                                        <span class="grey800">부산</span>
+                                    </div>
+                                <td>9</td>
+                                <td><span class="plus">▲  </span>9건</td>
+                              </tr>
+                              <tr class="tablerow p2 grey900">
+                                <td>
+                                    <div class="tablecol-type">
+                                        <span class="datacolor4-4 mr-4">●  </span>
+                                        <span class="grey800">인천</span>
+                                    </div>
+                                <td>999</td>
+                                <td><span class="plus">▲  </span>999건</td>
+                              </tr>
+                              <tr class="tablerow p2 grey900">
+                                <td>
+                                    <div class="tablecol-type">
+                                        <span class="datacolor4-5 mr-4">●  </span>
+                                        <span class="grey800">충북</span>
+                                    </div>
+                                <td>999</td>
+                                <td><span class="plus">▲  </span>999건
+                                </td>
+                              </tr>
+                            </tbody>
+                                </table>
+                            </div>
+                    </div>
+
+                    <div class="ratiobox-dailycoplain">
+                        <div class="graph mt-8 mb-8" style="width:200px ; height:100px;"></div>
+                            <div class="content-table bg-grey200 mt-8">
+                                <table class="tb">
+                            <thead class="bg-grey200 h6 grey700" style="height: 28px;"> 
+                                <th>
+                                    <span class="">본사조직</span>
+                                </th>
+                                <th >
+                                    <span class="">건수</span>
+                                </th>
+                                <th >
+                                    <span class="">증감(전일대비)</span>
+                                </th>
+                            </thead>
+                            <tbody class="tablerow">
+                              <tr class="p2 grey900">
+                                <td>
+                                    <div class="tablecol-type">
+                                        <span class="datacolor5-1 mr-4">●  </span>
+                                        <span class="grey800">본사조직1</span>
+                                    </div>
+                                </td>
+                                <td>999</td>
+                                <td><span class="minus">▼  </span>999건</td>
+                              </tr>
+                              <tr class="tablerow p2 grey900">
+                                <td>
+                                    <div class="tablecol-type">
+                                        <span class="datacolor5-2 mr-4">●  </span>
+                                        <span class="grey800">본사조직2</span>
+                                    </div>
+                                <td>999</td>
+                                <td><span class="minus">▼  </span>999건</td>
+                              </tr>
+                              <tr class="tablerow p2 grey900">
+                                <td>
+                                    <div class="tablecol-type">
+                                        <span class="datacolor5-3 mr-4">●  </span>
+                                        <span class="grey800">본사조직3</span>
+                                    </div>
+                                <td>9</td>
+                                <td><span class="plus">▲  </span>9건</td>
+                              </tr>
+                              <tr class="tablerow p2 grey900">
+                                <td>
+                                    <div class="tablecol-type">
+                                        <span class="datacolor5-4 mr-4">●  </span>
+                                        <span class="grey800">본사조직4</span>
+                                    </div>
+                                <td>999</td>
+                                <td><span class="plus">▲  </span>999건</td>
+                              </tr>
+                              <tr class="tablerow p2 grey900">
+                                <td>
+                                    <div class="tablecol-type">
+                                        <span class="datacolor5-5 mr-4">●  </span>
+                                        <span class="grey800">본사조직5</span>
+                                    </div>
+                                <td>999</td>
+                                <td><span class="plus">▲  </span>999건
+                                </td>
+                              </tr>
+                            </tbody>
+                                </table>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 처리 건수 현황 -->
+        <div class="d-flex">
+            <div class="container">
+                <div class="container-header grey700">
+                    <h3 class="h3">처리 건수 현황</h3>
+                </div>
+                <div class="content d-flex">
+                    <div class="ratiobox-dailycoplain">
+                        <div class="graph mt-8 mb-8" style="width:200px ; height:100px;"></div>
+                            <div class="content-table bg-grey200 mt-8">
+                                <table class="tb">
+                            <thead class="bg-grey200 h6 grey700" style="height: 28px;"> 
+                                <th>
+                                    <span class="">하이테크센터</span>
+                                </th>
+                                <th >
+                                    <span class="">건수</span>
+                                </th>
+                                <th >
+                                    <span class="">증감(전일대비)</span>
+                                </th>
+                            </thead>
+                            <tbody class="tablerow">
+                              <tr class="p2 grey900">
+                                <td>
+                                    <div class="tablecol-type">
+                                        <span class="datacolor3-1 mr-4">●  </span>
+                                        <span class="grey800">수원 하이테크센터</span>
+                                    </div>
+                                </td>
+                                <td>999</td>
+                                <td><span class="minus">▼  </span>999건</td>
+                              </tr>
+                              <tr class="tablerow p2 grey900">
+                                <td>
+                                    <div class="tablecol-type">
+                                        <span class="datacolor3-2 mr-4">●  </span>
+                                        <span class="grey800">동부 하이테크센터</span>
+                                    </div>
+                                <td>999</td>
+                                <td><span class="minus">▼  </span>999건</td>
+                              </tr>
+                              <tr class="tablerow p2 grey900">
+                                <td>
+                                    <div class="tablecol-type">
+                                        <span class="datacolor3-3 mr-4">●  </span>
+                                        <span class="grey800">인천 하이테크센터</span>
+                                    </div>
+                                <td>9</td>
+                                <td><span class="plus">▲  </span>9건</td>
+                              </tr>
+                              <tr class="tablerow p2 grey900">
+                                <td>
+                                    <div class="tablecol-type">
+                                        <span class="datacolor3-4 mr-4">●  </span>
+                                        <span class="grey800">고양 하이테크센터</span>
+                                    </div>
+                                <td>999</td>
+                                <td><span class="plus">▲  </span>999건</td>
+                              </tr>
+                              <tr class="tablerow p2 grey900">
+                                <td>
+                                    <div class="tablecol-type">
+                                        <span class="datacolor3-5 mr-4">●  </span>
+                                        <span class="grey800">대전 하이테크센터</span>
+                                    </div>
+                                <td>999</td>
+                                <td><span class="plus">▲  </span>999건
+                                </td>
+                              </tr>
+                            </tbody>
+                                </table>
+                            </div>
+                    </div>
+                    
+                    <div class="ratiobox-dailycoplain">
+                        <div class="graph mt-8 mb-8" style="width:200px ; height:100px;"></div>
+                            <div class="content-table bg-grey200 mt-8">
+                                <table class="tb">
+                            <thead class="bg-grey200 h6 grey700" style="height: 28px;"> 
+                                <th>
+                                    <span class="">지역본부</span>
+                                </th>
+                                <th >
+                                    <span class="">건수</span>
+                                </th>
+                                <th >
+                                    <span class="">증감(전일대비)</span>
+                                </th>
+                            </thead>
+                            <tbody class="tablerow">
+                              <tr class="p2 grey900">
+                                <td>
+                                    <div class="tablecol-type">
+                                        <span class="datacolor4-1 mr-4">●  </span>
+                                        <span class="grey800">대구 경북</span>
+                                    </div>
+                                </td>
+                                <td>999</td>
+                                <td><span class="minus">▼  </span>999건</td>
+                              </tr>
+                              <tr class="tablerow p2 grey900">
+                                <td>
+                                    <div class="tablecol-type">
+                                        <span class="datacolor4-2 mr-4">●  </span>
+                                        <span class="grey800">남부</span>
+                                    </div>
+                                <td>999</td>
+                                <td><span class="minus">▼  </span>999건</td>
+                              </tr>
+                              <tr class="tablerow p2 grey900">
+                                <td>
+                                    <div class="tablecol-type">
+                                        <span class="datacolor4-3 mr-4">●  </span>
+                                        <span class="grey800">부산</span>
+                                    </div>
+                                <td>9</td>
+                                <td><span class="plus">▲  </span>9건</td>
+                              </tr>
+                              <tr class="tablerow p2 grey900">
+                                <td>
+                                    <div class="tablecol-type">
+                                        <span class="datacolor4-4 mr-4">●  </span>
+                                        <span class="grey800">인천</span>
+                                    </div>
+                                <td>999</td>
+                                <td><span class="plus">▲  </span>999건</td>
+                              </tr>
+                              <tr class="tablerow p2 grey900">
+                                <td>
+                                    <div class="tablecol-type">
+                                        <span class="datacolor4-5 mr-4">●  </span>
+                                        <span class="grey800">충북</span>
+                                    </div>
+                                <td>999</td>
+                                <td><span class="plus">▲  </span>999건
+                                </td>
+                              </tr>
+                            </tbody>
+                                </table>
+                            </div>
+                    </div>
+
+                    <div class="ratiobox-dailycoplain">
+                        <div class="graph mt-8 mb-8" style="width:200px ; height:100px;"></div>
+                            <div class="content-table bg-grey200 mt-8">
+                                <table class="tb">
+                            <thead class="bg-grey200 h6 grey700" style="height: 28px;"> 
+                                <th>
+                                    <span class="">본사조직</span>
+                                </th>
+                                <th >
+                                    <span class="">건수</span>
+                                </th>
+                                <th >
+                                    <span class="">증감(전일대비)</span>
+                                </th>
+                            </thead>
+                            <tbody class="tablerow">
+                              <tr class="p2 grey900">
+                                <td>
+                                    <div class="tablecol-type">
+                                        <span class="datacolor5-1 mr-4">●  </span>
+                                        <span class="grey800">본사조직1</span>
+                                    </div>
+                                </td>
+                                <td>999</td>
+                                <td><span class="minus">▼  </span>999건</td>
+                              </tr>
+                              <tr class="tablerow p2 grey900">
+                                <td>
+                                    <div class="tablecol-type">
+                                        <span class="datacolor5-2 mr-4">●  </span>
+                                        <span class="grey800">본사조직2</span>
+                                    </div>
+                                <td>999</td>
+                                <td><span class="minus">▼  </span>999건</td>
+                              </tr>
+                              <tr class="tablerow p2 grey900">
+                                <td>
+                                    <div class="tablecol-type">
+                                        <span class="datacolor5-3 mr-4">●  </span>
+                                        <span class="grey800">본사조직3</span>
+                                    </div>
+                                <td>9</td>
+                                <td><span class="plus">▲  </span>9건</td>
+                              </tr>
+                              <tr class="tablerow p2 grey900">
+                                <td>
+                                    <div class="tablecol-type">
+                                        <span class="datacolor5-4 mr-4">●  </span>
+                                        <span class="grey800">본사조직4</span>
+                                    </div>
+                                <td>999</td>
+                                <td><span class="plus">▲  </span>999건</td>
+                              </tr>
+                              <tr class="tablerow p2 grey900">
+                                <td>
+                                    <div class="tablecol-type">
+                                        <span class="datacolor5-5 mr-4">●  </span>
+                                        <span class="grey800">본사조직5</span>
+                                    </div>
+                                <td>999</td>
+                                <td><span class="plus">▲  </span>999건
+                                </td>
+                              </tr>
+                            </tbody>
+                                </table>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
 </body>
 </html>
