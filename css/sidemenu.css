@@ -86,6 +86,9 @@ body{
     border-radius: 999px;
 }
 
+/* 네비게이션 리스트, 접기 버튼 등은 제가 JS를 몰라서 위치 정도만 잡아드렸습니다.
+클릭된 상태는 수도:active로 지정해뒀으니 변형해서 사용하시면 될것 같아요. */
+
 /* 네비게이션 드로우 */
 
 .nav-list{
@@ -114,6 +117,12 @@ body{
     color: #FFF;
 }
 
+.nav-lowertab-box{
+    margin: 0px 8px;
+    overflow: hidden;
+    border-radius: 0px 0px 8px 8px;
+}
+
 .nav-lowertab{
     padding: 0px 24px;
     display: block;
@@ -140,6 +149,11 @@ body{
     background-color: #E0E0E0;
     border: none;
     padding: 0px;
+}
+
+.draw-btn:hover{
+    background-color: #bdbdbd;
+
 }
 
 .draw-btn:active {
