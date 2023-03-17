@@ -48,7 +48,9 @@
 }
 
 .content-circle{
-    min-width: 320px;
+    /* min-width: 240px; */
+    width: max-content;
+    width: 310px;
     height: 100%;
 }
 
